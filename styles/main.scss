@@ -1,5 +1,3 @@
 @import './base/font';
-
-* {
-  font-family: 'Noto Sans KR', sans-serif;
-}
+@import './base/normailze';
+@import './base/reset';
