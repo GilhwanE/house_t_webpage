@@ -2,7 +2,7 @@
 // @import './base/constants/typography';
 @import './constants/colors';
 @import './constants/typography';
-
+@import './constants/breakpoint';
 @import './base/font';
 @import './base/normailze';
 
@@ -10,3 +10,4 @@
 
 @import './mixins/text-style';
 @import './layout/grid';
+@import './mixins/responsive';
