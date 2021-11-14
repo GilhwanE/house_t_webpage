@@ -9,6 +9,8 @@
 @import './base/reset';
 
 @import './mixins/text-style';
-@import './layout/grid';
 @import './mixins/responsive';
 @import './mixins/position';
+@import './mixins/flexbox';
+
+@import './layout/grid';
