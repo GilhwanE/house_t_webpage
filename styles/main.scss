@@ -3,14 +3,16 @@
 @import './constants/colors';
 @import './constants/typography';
 @import './constants/breakpoint';
+
 @import './base/font';
 @import './base/normailze';
-
 @import './base/reset';
 
 @import './mixins/text-style';
 @import './mixins/responsive';
 @import './mixins/position';
 @import './mixins/flexbox';
+
+@import './modules/tags';
 
 @import './layout/grid';
