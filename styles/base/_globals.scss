@@ -12,22 +12,22 @@
 
 .sm-only {
   @media screen and (min-width: $md-breakpoint) {
-    display: hidden !important;
+    display: none !important;
   }
 }
 
 .md-only {
   @media screen and (max-width: $md-breakpoint - 1) {
-    display: hidden !important;
+    display: none !important;
   }
   @media screen and (max-width: $lg-breakpoint) {
-    display: hidden !important;
+    display: none !important;
   }
 }
 
 .lg-only {
   @media screen and (max-width: $lg-breakpoint - 1) {
-    display: hidden !important;
+    display: none !important;
   }
 }
 
