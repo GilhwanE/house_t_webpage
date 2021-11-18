@@ -38,4 +38,11 @@
       margin-right: 4px;
     }
   }
+
+  @include responsive(T) {
+    .logo {
+      position: static;
+      transform: none;
+    }
+  }
 }
