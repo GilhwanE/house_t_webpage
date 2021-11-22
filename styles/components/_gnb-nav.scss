@@ -5,11 +5,21 @@
 
   &-item {
     margin-right: 24px;
+
+    &.is-active,
+    &:hover {
+      a {
+        color: $blue;
+      }
+    }
     &:last-child {
       margin-right: 0;
     }
+
     a {
       @include text-style(18, $primary);
+      display: block;
+      padding: 8px;
       font-weight: 700;
     }
   }
