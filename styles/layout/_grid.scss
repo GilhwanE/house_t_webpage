@@ -1,40 +1,12 @@
-/*
-    * Mobile (<786px) -------------------------
-    * fixture ----------------sm 
-    * # of columns  ----------4
-    * gutter ----------- -----20px
-    * container --------------100% - (5px * 2 )
-    * margin
-    
-    * Tablet (>=786px) -------------------------
-    * fixture ----------------md
-    * # of columns  ----------12
-    * gutter ----------- -----20px
-    * container --------------100% - (5px * 2 )
-    * margin -----------------30px
-    * container --------------100% - (30px * 2)
-    * max-container ----------960px
-    *Desktop ( >= 1200px)-----------------------
-    * fixture ---------------lg
-    * # of colums -----------12
-    * gutter ----------------20px
-    * unit ------------------75px
-    * margin ----------------auto
-    * container -------------1140px
-    * max-container ---------1140px
-*/
-
 $gutter: 20px;
 
 $sm-columns: 4;
 $sm-margin: 5px;
 
-$md-breakpoint: 768px;
 $md-columns: 12;
 $md-margin: 30px;
 $md-max-container: 960px + $md-margin * 2;
 
-$lg-breakpoint: 1200px;
 $lg-columns: 12;
 $lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
@@ -52,13 +24,13 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
   }
 
   //   .col-sm-1 .col-md-2 .col-lg-3
-  [class^="'col-'"] {
-    padding: 0 $gutter / 2;
+  [class^='col-'] {
+    padding: 0 $gutter/2;
   }
 
   @for $i from 1 through $sm-columns {
     .col-sm-#{$i} {
-      width: $i / $sm-columns * 100%;
+      width: percentage($i / $sm-columns);
     }
   }
 
@@ -77,7 +49,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     padding: 0;
     @for $i from 1 through $lg-columns {
       .col-lg-#{$i} {
-        width: $i / $lg-columns * 100%;
+        width: ($lg-unit + $gutter) * $i;
       }
     }
   }
