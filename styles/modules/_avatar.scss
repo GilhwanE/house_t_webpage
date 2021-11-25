@@ -3,6 +3,10 @@
   display: block;
   overflow: hidden;
   border-radius: 50%;
+  background-image: url('/assets/imgs/img-user-default.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   img {
     width: 100%;
