@@ -1,0 +1,47 @@
+.lnb {
+  overflow-x: auto;
+
+  &-list {
+    @include inline-flexbox(start);
+    white-space: nowrap;
+    position: relative;
+    left: -8px;
+  }
+
+  &-item {
+    &.is-active {
+      a {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+    }
+    a {
+      @include inline-flexbox;
+      @include text-style(13, $dark);
+      font-weight: 700;
+      text-align: center;
+      padding: 0 8px;
+      height: 40px;
+    }
+
+    .ic-new {
+      color: $red;
+    }
+
+    &:active,
+    &:hover {
+      color: $blue;
+    }
+    &:active {
+      a::before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -8px;
+        width: 100%;
+        border-bottom: 2px solid $blue;
+      }
+    }
+  }
+}
