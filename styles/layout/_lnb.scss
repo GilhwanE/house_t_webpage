@@ -1,4 +1,5 @@
 .lnb {
+  $lnb-link: 8px;
   overflow-x: auto;
 
   &::-webkit-scrollbar {
@@ -9,14 +10,18 @@
     @include inline-flexbox(start);
     white-space: nowrap;
     position: relative;
+    height: 40px;
     left: -8px;
+    padding: 0 7px;
+    margin-left: -15px;
+    border-bottom: 1px solid $border;
   }
 
   &-item {
     &.is-active {
       a {
         color: $blue;
-        border-bottom: 2px solid $blue;
+        border-bottom-color: $blue;
       }
     }
     a {
@@ -24,12 +29,9 @@
       @include text-style(13, $dark);
       font-weight: 700;
       text-align: center;
-      padding: 0 8px;
+      padding: 0 $lnb-link;
       height: 40px;
-    }
-
-    .ic-new {
-      color: $red;
+      border-bottom: 2px solid transparent;
     }
 
     &:active,
