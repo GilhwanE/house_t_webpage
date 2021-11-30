@@ -30,21 +30,28 @@
       padding: 0 $lnb-link;
       height: 40px;
       border-bottom: 2px solid transparent;
-    }
 
-    &:active,
-    &:hover {
-      color: $blue;
+      &:hover {
+        color: $blue;
+      }
     }
-    &:active {
-      a::before {
-        content: '';
-        position: absolute;
-        display: block;
-        left: 0;
-        bottom: -8px;
-        width: 100%;
-        border-bottom: 2px solid $blue;
+  }
+
+  @include responsive(T) {
+    border-bottom: 1px solid $border;
+    overflow-x: visible;
+    height: 50px;
+
+    &-list {
+      height: auto;
+      padding: 0;
+      margin-left: 0;
+      border-bottom: none;
+    }
+    &-item {
+      a {
+        @include text-style(14);
+        height: 50px;
       }
     }
   }
