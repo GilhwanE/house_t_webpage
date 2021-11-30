@@ -11,10 +11,12 @@
   }
 
   .gnb {
+    z-index: $gnb-level;
     top: 0;
   }
 
   .lnb {
+    z-index: $lnb-level;
     top: $gnb-height-sm;
   }
 
