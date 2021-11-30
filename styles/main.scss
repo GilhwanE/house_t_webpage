@@ -5,6 +5,7 @@
 @import './constants/breakpoint';
 @import './constants/box-shadows';
 @import './constants/z-indexes';
+@import './constants/dimensions';
 
 @import './base/font';
 @import './base/normailze';
@@ -37,4 +38,5 @@
 @import './layout/overlay';
 @import './layout/serach-modal';
 @import './layout/lnb';
+@import './layout/gobal-header';
 @import './layout/gobal-footer';
