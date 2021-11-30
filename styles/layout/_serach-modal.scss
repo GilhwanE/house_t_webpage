@@ -31,61 +31,61 @@
       width: 56px;
     }
   }
+}
 
-  .search-history {
-    $close-button-size: 32px;
+.search-history {
+  $close-button-size: 32px;
 
-    &-header {
-      @include flexbox(between);
-      margin-bottom: 8px;
+  &-header {
+    @include flexbox(between);
+    margin-bottom: 8px;
 
-      .title,
-      button {
-        @include text-style(13, $secondary);
-      }
+    .title,
+    button {
+      @include text-style(13, $secondary);
+    }
+  }
+
+  &-content {
+    .placeholder {
+      @include flexbox(start);
+      @include text-style(16, $tertiary);
+      width: 100%;
+      height: 44px;
+      padding: 0 8px;
+      font-weight: 400;
+    }
+  }
+
+  &-item {
+    @include flexbox(between);
+    position: relative;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $background;
     }
 
-    &-content {
-      .placeholder {
-        @include flexbox(start);
-        @include text-style(16, $tertiary);
-        width: 100%;
-        height: 44px;
-        padding: 0 8px;
-        font-weight: 400;
-      }
+    .word-button {
+      @include text-style(16, $primary);
+      font-weight: 400;
+      padding: 10px $close-button-size 10px 8px;
+      text-align: left;
+      width: 100%;
     }
 
-    &-item {
-      @include flexbox(between);
-      position: relative;
-      border-radius: 2px;
+    .delete-button {
+      @include flexbox;
+      position: absolute;
+      right: 0;
+      top: 6px;
+      width: $close-button-size;
+      height: $close-button-size;
+      font-size: 16px;
+      color: $tertiary;
 
       &:hover {
-        background-color: $background;
-      }
-
-      .word-button {
-        @include text-style(16, $primary);
-        font-weight: 400;
-        padding: 10px $close-button-size 10px 8px;
-        text-align: left;
-        width: 100%;
-      }
-
-      .delete-button {
-        @include flexbox;
-        position: absolute;
-        right: 0;
-        top: 6px;
-        width: $close-button-size;
-        height: $close-button-size;
-        font-size: 16px;
-        color: $tertiary;
-
-        &:hover {
-          color: $primary;
-        }
+        color: $primary;
       }
     }
   }

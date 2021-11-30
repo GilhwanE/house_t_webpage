@@ -2,9 +2,7 @@
   $lnb-link: 8px;
   overflow-x: auto;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  @include no-scrollbar;
 
   &-list {
     @include inline-flexbox(start);
