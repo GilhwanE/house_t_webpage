@@ -1,4 +1,4 @@
-const slider = tns({
+const productCarousel = tns({
   container: '.product-carousel .slider-list',
   controls: false,
   navContainer: '.product-carousel .thumbnail-list',
@@ -7,7 +7,6 @@ const slider = tns({
   // items: 3,
   // slideBy: 'page',
   autoplay: true,
-  autoplayHoverPause: true,
   autoplayButtonOutput: false,
   mouseDrag: true,
   preventScrollOnTouch: true,
