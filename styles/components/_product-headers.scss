@@ -1,0 +1,66 @@
+.product-section-header {
+  position: relative;
+  @include flexbox(start);
+  width: 100%;
+  height: 64px;
+  background: $white;
+
+  .title {
+    @include text-style(16, $dark);
+  }
+
+  .bedge {
+    @include text-style(16, $blue);
+    margin-left: 8px;
+  }
+
+  .text-button,
+  .ic-button {
+    @include pos-center-y;
+    right: 0;
+  }
+
+  .text-button {
+    @include text-style(14, $blue);
+    padding: 15px;
+    right: -15px;
+    font-weight: 700;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+
+  .ic-button {
+    @include flexbox;
+    right: -15px;
+    width: 22px + (15px * 2);
+    height: 22px + (15px * 2);
+    font-size: 22px;
+    color: $secondary;
+  }
+
+  .ic-button {
+    &.is-right {
+      transform: translateY(-50%) rotate(-90deg);
+    }
+  }
+
+  @include responsive(T) {
+    .title,
+    .bedge {
+      @include text-style(18);
+    }
+
+    .text-button {
+      @include text-style(16);
+    }
+
+    .text-button,
+    .ic-button {
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+  }
+}
