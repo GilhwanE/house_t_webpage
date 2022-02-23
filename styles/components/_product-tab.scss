@@ -1,0 +1,41 @@
+.product-tab {
+  width: 100%;
+  height: 40px;
+  background: $white;
+  border-bottom: 1px solid $border;
+
+  &-list {
+    @include flexbox;
+    margin: 0 -15px;
+  }
+
+  &-item {
+    width: (100% / 5);
+
+    &.is-active {
+      button {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+    }
+
+    button {
+      @include flexbox;
+      @include text-style(13, $dark);
+      width: 100%;
+      height: 40px;
+      font-weight: 700;
+      white-space: nowrap;
+      border-bottom: 1px solid transparent;
+
+      &:active {
+        color: $blue;
+      }
+    }
+
+    .bedge {
+      margin-left: 4px;
+      color: $secondary;
+    }
+  }
+}
