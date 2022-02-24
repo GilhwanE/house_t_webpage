@@ -94,7 +94,7 @@ URL : https://gilhwane.github.io/house_t_webpage/
 </div>
 ```
 
--Image
+-Image-
 
 <!--
 ![favicon-32x32](https://user-images.githubusercontent.com/63918911/155260567-bb1987a2-6078-4a6d-98df-e1dc02a20b04.png)
