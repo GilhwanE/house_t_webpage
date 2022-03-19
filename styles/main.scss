@@ -6,6 +6,7 @@
 @import "./constants/box-shadows";
 @import "./constants/z-indexes";
 @import "./constants/dimensions";
+@import "./constants/grids";
 
 @import "./base/font";
 @import "./base/normailze";
@@ -40,6 +41,7 @@
 @import "./components/product-headers";
 @import "./components/product-table";
 @import "./components/product-tab";
+@import "./components/product-spec";
 
 @import "./layout/grid";
 @import "./layout/gnb";
