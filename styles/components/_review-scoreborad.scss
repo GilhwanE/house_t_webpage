@@ -22,11 +22,13 @@
     }
 
     .star-rating {
+      color: #3da5f5;
     }
   }
 
   .score-detail {
     order: 3;
+    text-align: center;
   }
 
   &::before {
