@@ -37,4 +37,31 @@
     content: "";
     background-color: $border;
   }
+
+  @include responsive(T) {
+    height: 148px;
+    padding: 0 72px;
+
+    .score-detail,
+    .score-summary {
+      width: auto;
+    }
+    .score-summary {
+      flex-direction: row-reverse;
+
+      .average-score {
+        margin-bottom: 0;
+      }
+
+      .star-rating {
+        font-size: 24px;
+        margin-right: 16px;
+      }
+    }
+
+    &::before {
+      height: 72px;
+      margin: 0 69px;
+    }
+  }
 }
