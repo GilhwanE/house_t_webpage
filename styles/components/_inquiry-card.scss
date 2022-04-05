@@ -1,2 +1,18 @@
 .inquiry-card {
+  &-header {
+    @include text-style(12);
+
+    .detail,
+    .misc {
+      @include flexbox(start);
+    }
+
+    .detail {
+      color: $primary;
+    }
+
+    .misc {
+      color: $tertiary;
+    }
+  }
 }
