@@ -18,4 +18,16 @@
       display: none;
     }
   }
+
+  .inquiry-empty {
+    @include text-style(16, $secondary);
+    padding: 48px 0;
+    text-align: center;
+  }
+
+  @include responsive(T) {
+    .inquiry-empty {
+      padding: 28px 0;
+    }
+  }
 }
