@@ -1,12 +1,12 @@
 // responsive라는 함수는 스크린인자값을 받는데 T사이즈면 테블릿 사이즈를 받아오는 구조로 미디어쿼리를 편하게 쓰기 위한 함수
 
 @mixin responsive($screen) {
-  @if ($screen == 'T') {
+  @if ($screen == "T") {
     @media screen and (min-width: $md-breakpoint) {
       @content;
     }
   }
-  @if ($screen == 'D') {
+  @if ($screen == "D") {
     @media screen and (min-width: $lg-breakpoint) {
       @content;
     }
@@ -15,5 +15,12 @@
 .section {
   @include responsive(T) {
     display: grid;
+  }
+}
+
+// 타블릿 사이즈 이전
+@mixin mobile-only() {
+  @media screen and (max-width: $md-breakpoint - 1px) {
+    @content;
   }
 }
