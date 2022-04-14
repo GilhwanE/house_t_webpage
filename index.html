@@ -1813,6 +1813,7 @@
           <i class="ic-bookmark"></i>
           <span aria-label="북마크 1,800">1,800</span>
         </button>
+
         <!-- 북마크를 했을떄 -->
         <!-- <button class="btn-48 btn-ghost is-active" type="button">
           <i class="ic-bookmark-filled"></i>
@@ -2040,6 +2041,140 @@
           </div>
         </div>
       </div>
+    </aside>
+
+    <aside class="order-form-modal lg-hidden">
+      <h1 class="visually-hidden">주문창</h1>
+      <form action="/" method="post" class="order-form">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="order-inputs">
+                <div class="select-group is-active">
+                  <select class="form-select" id="order-form-select-1" required>
+                    <option value="1">선택</option>
+                    <option value="2">tt</option>
+                    <option value="3">ww</option>
+                    <option value="4">qq</option>
+                    <option value="5">ss</option>
+                  </select>
+
+                  <i class="ic-caret" aria-hidden></i>
+                </div>
+                <div class="select-group">
+                  <select class="form-select" id="order-form-select-2">
+                    <option value="1">추가상품(선택)</option>
+                    <option value="1">선택</option>
+                    <option value="2">tt</option>
+                    <option value="3">ww</option>
+                    <option value="4">qq</option>
+                    <option value="5">ss</option>
+                  </select>
+
+                  <i class="ic-caret" aria-hidden></i>
+                </div>
+              </div>
+
+              <div class="order-checkout">
+                <ul class="checkout-list">
+                  <li class="checkout-item">
+                    <div class="checkout-card">
+                      <header class="checkout-header">
+                        <h4 class="checkout-title">
+                          추가상품 - 맛있는 제주 감귤을 직배송 / 제주도 귤 판매
+                          1위 믿고 구매하세요.
+                        </h4>
+                        <button
+                          type="button"
+                          class="delete-button"
+                          aria-label="해당 상품 삭제하기"
+                        >
+                          <i class="ic-close" aria-hidden></i>
+                        </button>
+                      </header>
+
+                      <footer class="checkout-footer">
+                        <div class="checkout-select">
+                          <select id="order-form-checkout-item-1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                          <i class="ic-caret" aria-hidden></i>
+                        </div>
+
+                        <output
+                          class="checkout-output"
+                          for="order-form-checkout-item-1"
+                        >
+                        </output>
+
+                        <div class="price-16">
+                          <strong class="amount">32,900</strong>
+                          <span class="currency">원</span>
+                        </div>
+                      </footer>
+                    </div>
+                  </li>
+                  <li class="checkout-item">
+                    <div class="checkout-card">
+                      <header class="checkout-header">
+                        <h4 class="checkout-title">
+                          추가상품 - 맛있는 제주 감귤을 직배송 / 제주도 귤 판매
+                          1위 믿고 구매하세요.
+                        </h4>
+                        <button
+                          type="button"
+                          class="delete-button"
+                          aria-label="해당 상품 삭제하기"
+                        >
+                          <i class="ic-close" aria-hidden></i>
+                        </button>
+                      </header>
+
+                      <footer class="checkout-footer">
+                        <div class="checkout-select">
+                          <select id="checkout-item-1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                          <i class="ic-caret" aria-hidden></i>
+                        </div>
+
+                        <output class="checkout-output" for="checkout-item-1">
+                        </output>
+
+                        <div class="price-16">
+                          <strong class="amount">32,900</strong>
+                          <span class="currency">원</span>
+                        </div>
+                      </footer>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <dl class="order-summary">
+                <dt>주문금액</dt>
+                <dd>
+                  <output for="order-form-select-1 order-form-select-2">
+                    <div class="price-20">
+                      <strong class="amount">0</strong>
+                      <span class="currency">원</span>
+                    </div>
+                  </output>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn-seconadry btn-48">장바구니</button>
+          <button type="submit" class="btn-primary btn-48">구매하기</button>
+        </div>
+      </form>
     </aside>
 
     <div class="overlay" aria-hidden></div>
