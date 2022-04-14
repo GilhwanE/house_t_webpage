@@ -4,6 +4,7 @@
   &-divider {
     height: 8px;
     margin: 0 -15px; // TODO grid 빼기
+    margin-top: 15px;
     background-color: $border;
 
     &.is-big {
