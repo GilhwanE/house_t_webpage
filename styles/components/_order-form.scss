@@ -1,10 +1,11 @@
 .order-form {
   .order-inputs {
     margin-bottom: 20px;
+
     .select-group {
-      margin-bottom: 8px;
-      &:last-child {
-        margin-bottom: 0;
+      margin-bottom: 0px;
+      &:first-child {
+        margin-bottom: 8px;
       }
     }
   }
@@ -40,5 +41,8 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @include responsive(T) {
   }
 }
