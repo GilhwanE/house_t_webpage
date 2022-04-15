@@ -1,0 +1,47 @@
+.order-form-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $order-form-modal-level;
+  width: 100%;
+  background-color: $white;
+  display: none;
+
+  padding-top: 16px;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.15);
+
+  &.is-open {
+    display: block;
+    animation-name: modal-fade-in;
+    animation-duration: 400ms;
+  }
+
+  .order-inputs {
+    margin-bottom: 8px;
+  }
+
+  .order-checkout,
+  .order-summary {
+    margin-bottom: 16px;
+  }
+
+  .button-group {
+    padding: 4px;
+    padding-top: 0;
+  }
+
+  @include responsive(T) {
+    padding-top: 32px;
+  }
+}
+
+@keyframes modal-fade-in {
+  0% {
+    //   자신의 높이만큼 아래로 100%의미
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}

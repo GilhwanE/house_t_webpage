@@ -2043,7 +2043,7 @@
       </div>
     </aside>
 
-    <aside class="order-form-modal lg-hidden">
+    <aside class="order-form-modal lg-hidden is-open">
       <h1 class="visually-hidden">주문창</h1>
       <form action="/" method="post" class="order-form">
         <div class="container">
@@ -2116,7 +2116,7 @@
                       </footer>
                     </div>
                   </li>
-                  <li class="checkout-item">
+                  <!-- <li class="checkout-item">
                     <div class="checkout-card">
                       <header class="checkout-header">
                         <h4 class="checkout-title">
@@ -2151,7 +2151,7 @@
                         </div>
                       </footer>
                     </div>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
 
@@ -2171,13 +2171,17 @@
         </div>
 
         <div class="btn-group">
-          <button type="button" class="btn-seconadry btn-48">장바구니</button>
-          <button type="submit" class="btn-primary btn-48">구매하기</button>
+          <button type="button" class="btn-seconadry btn-48" type="button">
+            장바구니
+          </button>
+          <button type="submit" class="btn-primary btn-48" type="submit">
+            구매하기
+          </button>
         </div>
       </form>
     </aside>
 
-    <div class="overlay" aria-hidden></div>
+    <div class="overlay is-active" aria-hidden></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="/js/productCarousel.js"></script>
