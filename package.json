@@ -20,10 +20,9 @@
   },
   "homepage": "https://github.com/GilhwanE/house_t_webpage#readme",
   "dependencies": {
-    "dart-sass": "^1.25.0",
-    "node-sass": "^6.0.1"
+    "dart-sass": "^1.25.0"
   },
   "devDependencies": {
-    "sass": "^1.43.4"
+    "sass": "^1.50.0"
   }
 }
