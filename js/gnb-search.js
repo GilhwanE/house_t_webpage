@@ -5,6 +5,12 @@ const gnbsearchHistoryList = gnbsearchHistory.querySelector('ol');
 const deleteAllButton = gnbSearch.querySelector(
   '.search-history-header button'
 );
+const deleteButtonItems = gnbSearch.querySelectorAll('.delete-button');
+
+function closeAllGnbSearchHistory() {
+  gnbsearchHistory.classList.remove('is-active');
+  window.removeEventListener('click', closeGnbSearchHistory);
+}
 
 function openGnbSearchHistory() {
   // check => gnbsearchHistoryList안에 li가 몇개있는지?
@@ -21,15 +27,28 @@ function openGnbSearchHistory() {
 
 function closeGnbSearchHistory(e) {
   if (!gnbSearch.contains(e.target)) {
-    gnbsearchHistory.classList.remove('is-active');
-    window.removeEventListener('click', closeGnbSearchHistory);
+    closeAllGnbSearchHistory();
   }
 }
 
 function deleteAllitem() {
   gnbsearchHistoryList.innerHTML = '';
-  gnbsearchHistory.classList.remove('is-active');
+  closeAllGnbSearchHistory();
+}
+
+function deleteSearchHistoryItem(e) {
+  // delete button 찾기
+  // event 전파를 막기
+  e.stopPropagation();
+  const itemToDelete = this.parentNode;
+  gnbsearchHistoryList.removeChild(itemToDelete);
+  if (gnbsearchHistoryList.children.length === 0) {
+    closeAllGnbSearchHistory();
+  }
 }
 
 gnbSearchInput.addEventListener('focus', openGnbSearchHistory);
 deleteAllButton.addEventListener('click', deleteAllitem);
+deleteButtonItems.forEach((button) => {
+  button.addEventListener('click', deleteSearchHistoryItem);
+});
