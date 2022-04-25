@@ -25,10 +25,10 @@ function toggleReviewLikeButton() {
     this.prepend(checkIcon);
   }
 
-  if (textElement) {
-  } else {
-      if(!isLiked)
-  }
+  //   if (textElement) {
+  //   } else {
+  //       if(!isLiked)
+  //   }
 
   this.classList.toggle('btn-primary');
   this.classList.toggle('btn-outlined');
