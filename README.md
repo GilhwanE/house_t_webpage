@@ -1,9 +1,10 @@
-# 내일의집
+# 내일의집 🏠
 
 URL : https://gilhwane.github.io/house_t_webpage/
 
 ### skill
- - HTML, CSS, SCSS , JS
+
+- HTML, CSS, SCSS , JS
 
 ### 1. GNB
 
