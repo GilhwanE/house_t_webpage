@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node-sass": "node-sass",
-    "sass": "node-sass -wr --source-map true styles/main.scss ./style.css"
+    "sass:build": "node-sass -r --source-map true styles/main.scss ./style.css",
+    "build": "node ./scripts/build.js",
+    "deploy": "npm run sass:build && npm run build && node ./scripts/deploy.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,13 @@
     "dart-sass": "^1.25.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "cssnano": "^5.1.7",
+    "fs-extra": "^10.1.0",
+    "gh-pages": "^3.2.3",
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "postcss": "^8.4.12",
     "sass": "^1.50.0"
   }
 }
