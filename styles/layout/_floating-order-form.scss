@@ -2,6 +2,12 @@
   @include flexbox(start, start);
   flex-direction: column;
   height: 700px; // temp
+  max-height: calc(100vh - 184px);
+  min-height: calc(100vh - 370px);
+  padding: 24px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 184px;
 
   > * {
     width: 100%;
