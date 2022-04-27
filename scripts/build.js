@@ -90,9 +90,9 @@ async function optimizeImageAssets() {
   const imagemin = (await import('imagemin')).default;
   try {
     await imagemin(
-      [path.resolve(__dirname, '../assets/images/*.{jpg,png,svg}')],
+      [path.resolve(__dirname, '../assets/imgs/*.{jpg,png,svg}')],
       {
-        destination: path.join(buildDir, 'assets/images'),
+        destination: path.join(buildDir, 'assets/imgs'),
         plugins: [imageminJpegtran()],
       }
     );
