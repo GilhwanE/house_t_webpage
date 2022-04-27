@@ -11,7 +11,7 @@ function toggleReviewLikeButton() {
 
   const isLiked = this.classList.contains('btn-primary'); //버튼의 상태가 도움이됨
   const textElement = this.nextElementSibling;
-  console.log(textElement);
+
   if (isLiked) {
     // 비활성
     this.innerHTML = NOT_HELPFUL;
@@ -22,13 +22,15 @@ function toggleReviewLikeButton() {
     const checkIcon = document.createElement('i');
     checkIcon.classList.add('ic-check');
     checkIcon.setAttribute('aria-hidden', true);
-    this.prepend(checkIcon);
+    this.prepend(checkIcon); // 이전 요소에 넣기
   }
 
-  //   if (textElement) {
-  //   } else {
-  //       if(!isLiked)
-  //   }
+  // if (textElement) {
+  // } else {
+  //     if(!isLiked)
+  //     // 앞으로는 활성화 될 것 => 1명
+  //     const newTextElement = document.createElement('p')
+  // }
 
   this.classList.toggle('btn-primary');
   this.classList.toggle('btn-outlined');
