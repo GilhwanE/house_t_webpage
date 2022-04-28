@@ -2681,7 +2681,13 @@ i {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  height: 700px; }
+  height: 700px;
+  max-height: calc(100vh - 184px);
+  min-height: calc(100vh - 370px);
+  padding: 24px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 184px; }
   .floating-order-form > * {
     width: 100%; }
   .floating-order-form .order-inputs,
