@@ -126,5 +126,5 @@ function updateActiveTabScroll() {
 }
 
 window.addEventListener('load', detectTabPanelPosition); // 윈도우에 모든요소가 load 된 후에 실행
-window.addEventListener('resize', detectTabPanelPosition);
-window.addEventListener('scroll', updateActiveTabScroll);
+window.addEventListener('resize', _.throttle(detectTabPanelPosition, 1000));
+window.addEventListener('scroll', _.throttle(updateActiveTabScroll, 300));
