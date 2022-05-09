@@ -100,7 +100,7 @@ URL : https://gilhwane.github.io/house_t_webpage/
 
 -Image-
 
-<!--
+
 ![favicon-32x32](https://user-images.githubusercontent.com/63918911/155260567-bb1987a2-6078-4a6d-98df-e1dc02a20b04.png)
 
 ![img-user-default](https://user-images.githubusercontent.com/63918911/155260651-b8f83066-796d-43e6-9809-d01ac95e773f.png)
@@ -114,4 +114,4 @@ URL : https://gilhwane.github.io/house_t_webpage/
 ![img-product-03](https://user-images.githubusercontent.com/63918911/155260819-8fe53d0d-8e84-4d64-ac69-7446f6816174.jpg)
 
 ![img-product-04](https://user-images.githubusercontent.com/63918911/155260831-4e3378aa-4a04-4b8f-a6dc-6e3a21aad77b.jpg)
- -->
+ 
