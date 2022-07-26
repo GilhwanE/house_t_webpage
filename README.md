@@ -6,6 +6,12 @@ URL : https://gilhwane.github.io/house_t_webpage/
 
 - HTML, CSS, SCSS , JS
 
+
+### image
+
+![모바일](https://user-images.githubusercontent.com/63918911/180941935-23bd3ccd-6bdb-4268-9358-4aea3b91d31a.PNG)
+![피씨](https://user-images.githubusercontent.com/63918911/180941955-73a21725-329b-45ce-ac52-617f3e25502f.PNG)
+
 ### 1. GNB
 
 - 로그인을 하지 않은 경우
@@ -98,5 +104,3 @@ URL : https://gilhwane.github.io/house_t_webpage/
 </div>
 ```
 
--Image-
- 
