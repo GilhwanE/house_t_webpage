@@ -4,8 +4,13 @@ URL : https://gilhwane.github.io/house_t_webpage/
 
 ### skill
 
-- HTML, CSS, SCSS , JS
+- HTML, CSS, SCSS , JS, figma
 
+### 주요기능
+- SCSS 스킬을 사용해보기 위해 이 프로젝트를 진행하였습니다. 
+- 공통UI 요소를 고려하여 폴더를 분배하여 파일을 관리하였습니다.
+- 디자인툴인 figma를 사용하여 이미지를 가져와서 사용하였습니다. (디자인은 제공받음)
+- 로그인, 비로그인과 같은 경우의 따라 제작하였습니다. (주석을 통해 알 수 있음) 
 
 ### 완성된 페이지 
 
