@@ -112,3 +112,6 @@ URL : https://gilhwane.github.io/house_t_webpage/
 </div>
 ```
 
+### 문제점 및 오류처리
+- 웹 접근성에 문제가 발생하였음 
+  
